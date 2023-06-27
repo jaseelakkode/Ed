@@ -103,9 +103,9 @@
 }
 
 .sc2{
-    background: url(bggg.jpg);
+    background: url(bgg.gif);
     background-size: 773px;
-   background-animation: colored 4s infinite linear;
+ 
 }
 .bx{
     animation: colored 4s infinite linear;
@@ -307,6 +307,25 @@
     }
   }
 
+  .nameBx{
+    animation: wobble 2s ease-in-out infinite;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+  }
+
+  @keyframes wobble{
+  0%, 100% {
+    transform: rotate3d(1,1,0,20deg);
+}
+
+25% {
+    transform: rotate3d(-1,1,0,20deg);
+}
+50% {
+    transform: rotate3d(-1,-1,0,20deg);
+}
+75% {
+    transform: rotate3d(1,-1,0,20deg);}}
   /* @keyframes ColorChange{
     0%{
         hsl(0%, 100%, 50%)
@@ -322,3 +341,22 @@
     }
     
   }; */
+
+
+  .usernm p {
+    
+    background: #623900 -webkit-linear-gradient(left, #582e01, #ec8a00) no-repeat 0 0 / 30px;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, .3);
+    animation: sweep 1.5s ease-in infinite;
+  }
+
+@keyframes sweep {
+    0% {
+        background-position: 0 0;
+    }
+  
+    100% {
+        background-position: 100% 100%;
+    }
+}
