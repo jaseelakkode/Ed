@@ -22,17 +22,15 @@
                 <video   width="71%" autoplay muted loop >
                     <source  src="Eid(1).mp4" type="video/mp4">
                   </video>
-                
+                <audio controls autoplay muted loop id="myaud" style="position: absolute; z-index: -999999;">
+                    <source  src="Eid(1).mp3" type="audio/mp3">
+                  </audio>
+                  <script>
+                    document.getElementById("myaud").muted = false;
+                  </script>
                    
             </div>
-            <div class="aud" style="position: absolute;">
-              <embed src="Eid(1).mp3" type="audio/mp3">
-
-                  
-                <script>
-                  document.getElementById('vid').play();
-                </script>
-            </div>
+            
             <div class="bg-main">
                 <img class="BG" src="bg.png" alt="">
                 <img style="width: 100%;     transform: translate(-44px, -385px);   
