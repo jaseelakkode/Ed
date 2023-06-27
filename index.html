@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +13,25 @@
 
 </head>
 <body>
+  
 
     <div class="container">
         <div class="subcontainer" style="overflow: hidden; background-color: black; padding-bottom: 40px;">
+             
             <div class="videoT" style="width: 100%;">
-                <video width="71%"  autoplay  loop style="margin-top: 21px;">
-                    <source src="/Eid(1).mp4" type="video/mp4">
+                <video   width="71%" autoplay muted loop >
+                    <source  src="Eid(1).mp4" type="video/mp4">
                   </video>
+                
+                   
+            </div>
+            <div class="aud" style="position: absolute;">
+              <embed src="Eid(1).mp3" type="audio/mp3">
+
+                  
+                <script>
+                  document.getElementById('vid').play();
+                </script>
             </div>
             <div class="bg-main">
                 <img class="BG" src="bg.png" alt="">
@@ -66,11 +79,11 @@
             <div class="nameBx" style="    width: 83%;
             margin-left: auto;
             margin-right: auto;">
-                <img src="Layer 1.png" alt="" style="width: 100%;">
-                <div class="usernm" style="padding: 0 31px;  line-height: 0.9; transform: translate(0, -53px); height: 36px;">
+                <img src="Layer 1.png" alt="" style="width: 81%;">
+                <div class="usernm " style="padding: 0 31px;  line-height: 0.9; transform: translate(0, -41px); height: 36px;">
                 <center>
-                    <p style="font-family: 'El Messiri', sans-serif;font-size: 20px; font-weight: 900;
-                    background: -webkit-linear-gradient(350deg, rgb(0 0 0) 0%, rgb(172 81 7) 43%, rgb(178 19 31) 100%);-webkit-background-clip: text;
+                    <p style="font-family: 'El Messiri', sans-serif;font-size: 23px; font-weight: 900;
+                    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; " class="font-effect-neon" id="TECHNOVEDANT-show-name"> </p>
 <br>
             </div></div>
@@ -81,7 +94,7 @@
                  <div class="bx2 bx"></div>
                  <div class="bx3 bx"></div>
                 </center></div>
-            
+                
         
             <script>
                 var slideIndex = 0;
@@ -124,9 +137,7 @@
         </div>
     </div>
 
-
-
-     <script>
+    <script>
         var jqs = function(sParam) {
           var sPageURL = window.location.search.substring(1);
           var sURLVariables = sPageURL.split("&");
